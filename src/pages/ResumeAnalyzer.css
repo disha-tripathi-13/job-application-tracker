@@ -1,0 +1,611 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.resume-page {
+  min-height: 100vh;
+  background: #f4f7fc;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1e293b;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.resume-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 7%;
+
+  background: white;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.resume-logo {
+  color: #2563eb;
+  text-decoration: none;
+
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.resume-nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.resume-nav-links a {
+  color: #475569;
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  transition: 0.2s ease;
+}
+
+.resume-nav-links a:hover {
+  color: #2563eb;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.resume-container {
+  width: 90%;
+  max-width: 950px;
+
+  margin: auto;
+
+  padding: 70px 0;
+}
+
+
+/* =========================
+   PAGE HEADING
+========================= */
+
+.resume-heading {
+  max-width: 720px;
+
+  margin: 0 auto 40px;
+
+  text-align: center;
+}
+
+.resume-heading span {
+  display: inline-block;
+
+  color: #2563eb;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 12px;
+}
+
+.resume-heading h1 {
+  color: #0f172a;
+
+  font-size: 42px;
+
+  line-height: 1.2;
+
+  margin-bottom: 15px;
+}
+
+.resume-heading p {
+  color: #64748b;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   ANALYZER CARD
+========================= */
+
+.analyzer-card {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 25px rgba(15, 23, 42, 0.08);
+
+  margin-bottom: 30px;
+}
+
+
+/* =========================
+   INPUT GROUP
+========================= */
+
+.input-group {
+  margin-bottom: 22px;
+}
+
+.input-group label {
+  display: block;
+
+  color: #334155;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  margin-bottom: 8px;
+}
+
+
+/* =========================
+   SELECT
+========================= */
+
+.input-group select {
+  width: 100%;
+
+  padding: 13px 14px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 9px;
+
+  background: white;
+
+  color: #334155;
+
+  font-size: 15px;
+
+  outline: none;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.input-group select:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =========================
+   PDF UPLOAD
+========================= */
+
+.upload-box {
+  border: 2px dashed #bfdbfe;
+
+  background: #eff6ff;
+
+  padding: 28px;
+
+  border-radius: 12px;
+
+  text-align: center;
+
+  transition: 0.2s ease;
+}
+
+.upload-box:hover {
+  border-color: #2563eb;
+
+  background: #eaf2ff;
+}
+
+
+/* File Input */
+
+.upload-box input[type="file"] {
+  width: 100%;
+
+  padding: 10px;
+
+  margin-bottom: 12px;
+
+  border-radius: 8px;
+
+  border: 1px solid #d1d5db;
+
+  background: white;
+
+  cursor: pointer;
+}
+
+.upload-box input[type="file"]::file-selector-button {
+  border: none;
+
+  padding: 9px 14px;
+
+  margin-right: 10px;
+
+  border-radius: 7px;
+
+  background: #2563eb;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+
+/* Upload Description */
+
+.upload-box p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+
+/* File Name */
+
+.file-name {
+  display: block;
+
+  margin-top: 10px;
+
+  color: #2563eb;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  word-break: break-word;
+}
+
+
+/* Loading */
+
+.file-loading {
+  display: block;
+
+  margin-top: 8px;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+
+/* =========================
+   ANALYZE BUTTON
+========================= */
+
+.analyze-btn {
+  width: 100%;
+
+  border: none;
+
+  padding: 14px;
+
+  border-radius: 9px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+
+  box-shadow:
+    0 5px 12px rgba(37, 99, 235, 0.2);
+}
+
+.analyze-btn:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 16px rgba(37, 99, 235, 0.25);
+}
+
+.analyze-btn:active {
+  transform: translateY(0);
+}
+
+.analyze-btn:disabled {
+  opacity: 0.7;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* =========================
+   RESULTS CONTAINER
+========================= */
+
+.results {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+
+/* =========================
+   SCORE CARD
+========================= */
+
+.score-card {
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow:
+    0 6px 20px rgba(15, 23, 42, 0.07);
+}
+
+.score-card h2 {
+  color: #1e293b;
+
+  font-size: 22px;
+
+  margin-bottom: 15px;
+}
+
+.score {
+  color: #2563eb;
+
+  font-size: 64px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  margin-bottom: 10px;
+}
+
+.score-card p {
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   RESULT SECTION
+========================= */
+
+.result-section {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 5px 20px rgba(15, 23, 42, 0.07);
+}
+
+.result-section h2 {
+  color: #1e293b;
+
+  font-size: 21px;
+
+  margin-bottom: 18px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.skill {
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 8px 13px;
+
+  border-radius: 20px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+
+/* Matched */
+
+.skill.matched {
+  background: #dcfce7;
+
+  color: #15803d;
+}
+
+
+/* Missing */
+
+.skill.missing {
+  background: #fee2e2;
+
+  color: #b91c1c;
+}
+
+
+/* =========================
+   SUGGESTIONS
+========================= */
+
+.suggestion {
+  margin: 10px 0;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+.suggestion strong {
+  color: #1e293b;
+}
+
+
+/* =========================
+   EMPTY RESULT MESSAGE
+========================= */
+
+.result-section p {
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+  .resume-navbar {
+    padding: 18px 20px;
+  }
+
+  .resume-nav-links {
+    gap: 15px;
+  }
+
+  .resume-nav-links a {
+    font-size: 13px;
+  }
+
+  .resume-container {
+    width: 92%;
+
+    padding: 50px 0;
+  }
+
+  .resume-heading h1 {
+    font-size: 34px;
+  }
+
+  .resume-heading p {
+    font-size: 15px;
+  }
+
+  .analyzer-card {
+    padding: 22px;
+  }
+
+  .score {
+    font-size: 54px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .resume-navbar {
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .resume-logo {
+    font-size: 24px;
+  }
+
+  .resume-nav-links {
+    gap: 18px;
+  }
+
+  .resume-container {
+    width: 94%;
+
+    padding: 35px 0;
+  }
+
+  .resume-heading {
+    margin-bottom: 30px;
+  }
+
+  .resume-heading h1 {
+    font-size: 28px;
+  }
+
+  .resume-heading p {
+    font-size: 14px;
+  }
+
+  .analyzer-card {
+    padding: 18px;
+  }
+
+  .upload-box {
+    padding: 20px 12px;
+  }
+
+  .score-card {
+    padding: 25px 15px;
+  }
+
+  .score {
+    font-size: 48px;
+  }
+
+  .result-section {
+    padding: 20px;
+  }
+
+  .result-section h2 {
+    font-size: 19px;
+  }
+
+  .skill {
+    font-size: 12px;
+  }
+}
